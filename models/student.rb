@@ -46,4 +46,13 @@ def save()
     return result
   end
 
+  def self.find(id)
+    sql = "SELECT * FROM hogwarts_students
+    WHERE id = $1"
+    values = [id]
+    student = SqlRunner.run(sql, values)
+    result = HogwartsStudent.new(student.first)
+    return result
+  end
+
 end
