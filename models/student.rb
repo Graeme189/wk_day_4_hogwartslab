@@ -12,10 +12,6 @@ def initialize(options)
   @age = options['age'].to_i
 end
 
-def first_name()
-  return "#{first_name}"
-end
-
 def save()
   sql = "INSERT INTO hogwarts_students
     (

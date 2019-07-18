@@ -2,7 +2,7 @@ require('pry')
 
 require_relative('../models/student')
 
-HogwartsStudent.delete_all()
+HogwarStudent.delete_all()
 
 student1 = HogwartsStudent.new({
   "first_name" => "Harry",
